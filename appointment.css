@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.appointment{
+    top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    margin-top: 70px;
+    padding: 20px;
+}
+h1{
+    margin: 10px;
+    font-size: 50x;
+    color: white;
+}
+.doctor{
+    width: 250px;
+    height: 450px;
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 15px;
+    margin:auto;
+    margin-bottom: 20px;
+    padding: 8px; 
+}
+.doctor p{
+    padding: 5px;
+}
+.doctor h1{
+    padding: 5px;
+    font-weight: 200;
+    font-size: 30px;
+    margin-left: 3px;
+}
+.doctor img{
+    width: 250px;
+    height: 250px;
+}
+p{
+    color:rgba(0,0,0,0.8);
+}
+button{
+    width: 100px;
+    padding: 5px 0;
+    text-align: center;
+    margin:20px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid dodgerblue;
+    background:transparent;
+    color:black;
+    cursor: pointer;
+}
+button:hover{
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+}
+h4{
+    margin-top: 5px;
+    margin-left: 3px;
+    color: rgb(140, 143, 150);
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}

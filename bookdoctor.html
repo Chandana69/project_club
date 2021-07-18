@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+    padding: 10px;
+    text-align: center;
+    border: 2px black solid ;
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    
+}
+
+.form *{
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    margin: 5px;
+}
+
+input{
+    border-radius: 5px;
+}
+
+button{
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background:dodgerblue;
+    color: white;
+    cursor: pointer;
+    margin: 30px;
+}
+
+button:hover{
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+}
+p{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+    </style>
+</head>
+<body>
+    <center><h1>Book Your Appointment</h1></center>
+    <div class="form">
+    <form action="">
+        <p>Name</p><input type="text"><br>
+        <p>Mobile Number</p><input type="tel"><br>
+        <p>Select Date</p><input type="date"><br>
+        <p>Select Time</p><input type="time"><br>
+        <a href="book.html"><button type="button">Book</button></a>
+    </form>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,105 @@
+<html>
+     <head>
+	     <title>Navigation</title>
+	 
+		<style>
+		*{
+			margin: 0;
+    padding: 0;
+			
+			font-family: sans-serif;
+		}
+		.home{
+			width: 100%;
+			height: 100vh;
+			background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bg.jpeg);
+			background-repeat:no-repeat;
+			background-size:cover;
+			background-attachment: fixed;
+			background-position: 100%;
+
+
+		}
+		.navbar{
+			width: 85%;
+			margin: auto;
+			padding: 35px 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: sticky;
+			height: 5%;
+		}
+		h2{
+			color: white;
+
+		}
+		.navbar ul li{
+			list-style: none;
+			display: inline-block;
+			margin: 0 20px;
+			position: relative;
+
+		}
+		.navbar ul li a{
+			text-decoration: none;
+			color: #fff;
+			text-transform: uppercase;
+
+		}
+		.info{
+			width: 100%;
+			position: absolute;
+			top:30%;
+			text-align: center;
+			color: #fff;
+		}
+		.info h1{
+			font-size: 70px;
+		}
+		button{
+			width: 150px;
+			padding: 15px 0;
+			text-align: center;
+			margin:20px 10px;
+			border-radius: 20px;
+			font-weight: bold;
+			border: 2px solid #fff;
+			background:transparent;
+			color: white;
+			cursor: pointer;
+		}
+		.signup{
+			background-color: dodgerblue;
+			border: none;
+		}
+		button:hover{
+			background-color: dodgerblue;
+			color: white;
+			border: none;
+		}
+		p{
+			margin: 3px;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div class="home">
+        <div class="navbar">
+            <ul>
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="login.html" >Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+				<li><a href="doctor.html">Doctors</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+		<div class="info">
+            <h1>WELCOME</h1>
+			<p>Don't have time for booking appointment, <br> Don't worry! <br>Book your appointment here</p>
+			<p>Consult the best doctors in the city!</p>
+        </div>
+	</div>
+</body>
+</html>
